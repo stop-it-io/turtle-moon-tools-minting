@@ -113,6 +113,7 @@ export const Dashboard = () => {
     const [numOfAttributes, setNumOfAttributes] = useState('');
     const [treasuryAccountId, setTreasuryAccountId] = useState('');
     const [renewAccountId, setRenewAccountId] = useState('');
+    const [supplyKey, setSupplyKey] = useState('');
     const [addAdminKey, setAddAdminKey] = useState(false);
     const [addFreezeKey, setAddFreezeKey] = useState(false);
 
@@ -138,6 +139,7 @@ export const Dashboard = () => {
         alreadyCreatedCIDs: alreadyCreatedCIDs,
         addAdminKey: addAdminKey,
         addFreezeKey: addFreezeKey,
+        supplyKey: supplyKey,
       }, user, hederaMainnetEnv, setLoading)
     }
 
@@ -314,6 +316,15 @@ export const Dashboard = () => {
                         label={"Auto Renew Account ID"}
                         value={renewAccountId}
                         onInput={ e=>setRenewAccountId(e.target.value)}
+                    /> 
+                    <br />
+                    <br />
+                    <TextField          
+                        style={{width:'100%'}}
+                        placeholder={"Supply Key"}
+                        label={"Supply Key"}
+                        value={supplyKey}
+                        onInput={ e=>setSupplyKey(e.target.value)}
                     /> 
                     <br />
                     <br />

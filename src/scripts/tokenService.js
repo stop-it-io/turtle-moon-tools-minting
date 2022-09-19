@@ -79,14 +79,14 @@ export const mintHashlips = async (hashlipsToken, user, hederaMainnetEnv, setLoa
   createNFTs(client, hashlipsToken, metadataCIDs, user.pk, hederaMainnetEnv, setLoading);
 }
 
-const mintExisitngToken = async (client, tokenId, metadataCIDs, hederaMainnetEnv, setLoading) => {
+const mintExisitngToken = async (client, tokenId, metadataCIDs, hederaMainnetEnv, setLoading, supplyKey) => {
   // TODO: Make ths DRY
   /* Mint the token */
   let nftIds = [];
   let urls = [];
   let limit_chunk = 5;
-  let rawdata = localStorage.getItem('supplyKey_'+tokenId.toString()); //fs.readFileSync('./supplyKey.json');
-  let supplyKey = PrivateKey.fromString(rawdata);
+  /*let rawdata = localStorage.getItem('supplyKey_'+tokenId.toString());*/ //fs.readFileSync('./supplyKey.json');
+  /*let supplyKey = PrivateKey.fromString(rawdata);*/
   const nbOfChunk = Math.ceil(metadataCIDs.length / limit_chunk);
   let supplyClone = metadataCIDs.length-1;
   let resp;
@@ -138,12 +138,16 @@ export const createNFTs = async (client, hashlipsToken, metadataCIDs, userPk, he
   // Init value for token ID to mint metadata
   let tokenId; 
   let adminKey;
-  let supplyKey;
   let freezeKey;
+  let supplyKey;
+
+  if(!!hashlipsToken.supplyKey){
+    supplyKey = hashlipsToken.supplyKey
+  }
 
   // If minting on a token ID that's already created, skip creatining initial token
   if (hashlipsToken.previousTokenId) {
-    mintExisitngToken(client, hashlipsToken.previousTokenId, metadataCIDs, hederaMainnetEnv, setLoading)
+    mintExisitngToken(client, hashlipsToken.previousTokenId, metadataCIDs, hederaMainnetEnv, setLoading, supplyKey)
     return
   }
   if (hashlipsToken.alreadyCreatedCIDs) {
