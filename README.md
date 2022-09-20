@@ -18,6 +18,15 @@ Prerequisites:
 3. `npm run build`
 4. `npm start`
 
+## Testnet data
+Minted token ID: 0.0.48298041
+Minted token supply key: 302e020100300506032b657004220420968f2b60dd2d7b57da44fbd0156ab1fb9a5da286713b742d03a388d6e81a440e
+
+Treasury, recovery and login account ID: 0.0.46034441
+Login PK: 302e020100300506032b65700422042038aea55a8fe895cf19c70d24c58d716ffb81847f9627601cd560103fcd8e409a
+Login API key: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaWQ6ZXRocjoweDUyNDc1ZDAzOTQ3Q2E3ODNENDU4OTg5NzJFMzYyZUM2NDBEYWUxMjgiLCJpc3MiOiJuZnQtc3RvcmFnZSIsImlhdCI6MTY2MzUxNjQ4NzgxMywibmFtZSI6InVwbG9hZCBrZXkifQ.vDuG-cLgM5OPZQ3x9TYvU5MdEf6UOV9X_e5_oi3R1JA
+
+
 
 ## Known issues
 ### Cannot find module ipfs-car/pack
