@@ -10,8 +10,12 @@ This codebase is in BETA, meaning there are a lot of bugs that are still needing
 
 
 ## How to run
-1. Get Craco: https://www.npmjs.com/package/@craco/craco
-  - `npm i @craco/craco`
+Prerequisities: 
+ - NPM
+ - Proper IDE (intelliJ)
+
+
+1. Get Craco: `npm i @craco/craco` (https://www.npmjs.com/package/@craco/craco)
 3. `npm run build`
 4. `npm start`
 
