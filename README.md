@@ -12,7 +12,7 @@ This codebase is in BETA, meaning there are a lot of bugs that are still needing
 ## How to run
 Prerequisities: 
  - NPM
- - Proper IDE (intelliJ)
+ - Proper IDE (intelliJ, Eclipse)
 
 
 1. Get Craco: `npm i @craco/craco` (https://www.npmjs.com/package/@craco/craco)
@@ -25,7 +25,7 @@ Prerequisities:
 https://stackoverflow.com/questions/70063600/cant-resolve-ipfs-car-blockstore-memory-when-importing-nft-storage
 
 ### window.require is not a function
-Replace `const fs = window_require('fs');` with `const fs = require('fs');` in `tokenService.js`
+Replace `const fs = window.require('fs');` with `const fs = require('fs');` in `tokenService.js`
 https://stackoverflow.com/questions/56091343/typeerror-window-require-is-not-a-function
 
 
