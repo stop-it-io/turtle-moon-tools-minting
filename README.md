@@ -10,7 +10,7 @@ This codebase is in BETA, meaning there are a lot of bugs that are still needing
 
 
 ## How to run
-Prerequisities: 
+Prerequisites: 
  - NPM
  - Proper IDE (intelliJ, Eclipse)
 
