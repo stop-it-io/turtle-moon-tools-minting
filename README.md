@@ -8,6 +8,14 @@ We want to help build the future of NFTS on Hedera so we've created these tools 
 # THIS IS IN BETA
 This codebase is in BETA, meaning there are a lot of bugs that are still needing to be fixed and enhancements to be integrated. USE AT YOUR OWN RISK. This software is provided as is and Turtle Moon is not responsible for any issues using the software.
 
+
+## How to run
+1. Get Craco: https://www.npmjs.com/package/@craco/craco
+  - `npm i @craco/craco`
+3. `npm run build`
+4. `npm start`
+
+
 ## Known issues
 ### Cannot find module ipfs-car/pack
 https://stackoverflow.com/questions/70063600/cant-resolve-ipfs-car-blockstore-memory-when-importing-nft-storage
