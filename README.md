@@ -26,8 +26,86 @@ Treasury, recovery and login account ID: 0.0.46034441<br/>
 Login PK: 302e020100300506032b65700422042038aea55a8fe895cf19c70d24c58d716ffb81847f9627601cd560103fcd8e409a<br/>
 Login API key: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaWQ6ZXRocjoweDUyNDc1ZDAzOTQ3Q2E3ODNENDU4OTg5NzJFMzYyZUM2NDBEYWUxMjgiLCJpc3MiOiJuZnQtc3RvcmFnZSIsImlhdCI6MTY2MzUxNjQ4NzgxMywibmFtZSI6InVwbG9hZCBrZXkifQ.vDuG-cLgM5OPZQ3x9TYvU5MdEf6UOV9X_e5_oi3R1JA
 
-
-
+_metadata.json example content:
+`
+[{
+    "name": "Test #1",
+    "creator": "creator",
+    "description": "desc",
+    "image": "To be replaced",
+    "type": "image/png",
+    "format": "opensea",
+    "attributes": [
+        {
+            "trait_type": "weather",
+            "value": "Sunny"
+        },
+        {
+            "trait_type": "handheld item",
+            "value": "Heavy machine gun"
+        },
+        {
+            "trait_type": "clothing",
+            "value": "Combat uniform green"
+        },
+        {
+            "trait_type": "headwear",
+            "value": "Baseball cap"
+        },
+        {
+            "trait_type": "footwear",
+            "value": "Army boots"
+        },
+        {
+            "trait_type": "ship",
+            "value": "Jet and ship"
+        },
+        {
+            "trait_type": "daytime",
+            "value": "Noon"
+        }
+    ]
+},
+{
+    "name": "Test #2",
+    "creator": "creator",
+    "description": "desc",
+    "image": "To be replaced",
+    "type": "image/png",
+    "format": "opensea",
+    "attributes": [
+        {
+            "trait_type": "weather",
+            "value": "f"
+        },
+        {
+            "trait_type": "handheld item",
+            "value": "a"
+        },
+        {
+            "trait_type": "clothing",
+            "value": "b"
+        },
+        {
+            "trait_type": "headwear",
+            "value": "d"
+        },
+        {
+            "trait_type": "footwear",
+            "value": "a"
+        },
+        {
+            "trait_type": "ship",
+            "value": "d"
+        },
+        {
+            "trait_type": "daytime",
+            "value": "e"
+        }
+    ]
+}
+]
+`
 ## Known issues
 ### Cannot find module ipfs-car/pack
 https://stackoverflow.com/questions/70063600/cant-resolve-ipfs-car-blockstore-memory-when-importing-nft-storage
