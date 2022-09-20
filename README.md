@@ -14,8 +14,7 @@ Prerequisities:
  - NPM
  - Proper IDE (intelliJ, Eclipse)
 
-
-1. Get Craco: `npm i @craco/craco` (https://www.npmjs.com/package/@craco/craco)
+1. `npm i @craco/craco`
 3. `npm run build`
 4. `npm start`
 
@@ -59,7 +58,7 @@ Donation HBAR Wallet Address:
 ### 0.9.3
 Changes:
 - Add in ability to add ADMIN key ad FREEZE key to single mints and bulk minting
-- Add ability to upload array of metadataJSON files already uploaded to IPFS
+- Add ability to upload array of metadata JSON files already uploaded to IPFS
 - Add ability to hide token logs to reduce lag after giant mints
 - Increase file format support for single minting to all image files, videos, filetypes. TEST THIS ON TESTNET FIRST TO MAKE SURE FILETYPE IS SUPPORTED
 - Update Readme

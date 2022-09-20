@@ -108,3 +108,11 @@ dist
 # TernJS port file
 .tern-port
 src/scripts/supplyKey.json
+
+#IDE
+.vscode
+.idea
+.eclipse
+
+#OS X
+.DS_Store

@@ -1,7 +1,7 @@
 import {hederaClient} from '../scripts/utils'
 import {createIPFSMetaData, createSingleIPFSMetaData} from './fileService'
 
-const fs = window.require('fs');
+const fs = require('fs');
 
 import {
   CustomFixedFee,
